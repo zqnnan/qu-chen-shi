@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>屈臣氏微商城1</title>
+    <link rel="Shortcut Icon" href="/img/6395d76d.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sousuo.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <div class="nav-left"></div>
+            <div class="nav-center">
+                <div class="z">
+                    <!-- <div class="jd"> </div> -->
+                    <div class="sousuo"></div>
+                    <input type="text" placeholder="大家都在搜精华" name="" id="nope">
+                </div>
+            </div>
+            <div class="nav-right">
+                <span>取消</span>
+            </div>
+        </div>
+        <!-- 删除 -->
+        <div class="remove1">
+            <div class="top">
+                <p>最近搜索</p>
+                <p class="sc">删除</p>
+            </div>
+
+            <div class="bottom">
+                <div class="bottom-c">
+                    <span class="spann">精华</span> 
+
+                    </di'v>
+                </div>
+            </div>
+        </div>
+        <!-- 推荐 -->
+        <div class="tuijian">
+            <div>
+                <p>热门推荐</p>
+                
+            </div>
+
+            <div class="bottom">
+                <div class="bottom-c">
+                    <span class="spann">防晒</span>
+                    <span class="spann">精华</span>
+                    <span class="spann">眼霜</span>
+                    <span class="spann">安瓶</span>
+                    <span class="spann">会员卡</span>
+                    <span class="spann">卸妆</span>
+                    <span class="spann">面膜</span>
+                    <span class="spann">喷雾</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/rem(1).js"></script>
+    <!-- <script src="../js/sousuo.js"></script> -->
+    <script src="../js/jquery.autocompleter1.js"></script>
+    <script src="../js/./cookie.js"></script>
+    
+
+    <script>
+
+        var colors =
+            [
+                {
+                    // "hex": "#EFDECD",
+                    "label": "精华                     |j|jinghua",
+                    // "rgb": "(239, 222, 205)"
+                },
+                {
+                    // "hex": "#CD9575", 
+                    "label": "精华面膜            |j|J|jinghua|m|",
+                    // "rgb": "(205, 149, 117)"
+                },
+                {
+                    // "hex": "#FDD9B5",
+                    "label": "精华 限量版        |j|jinghua",
+                    // "rgb": "(253, 217, 181)"
+                },
+                {
+                    // "hex": "#FDD9B5",  
+                    "label": "精华面膜限量版       |j|J|jinghua|m|mianmo",
+                    // "rgb": "(253, 217, 181)"
+                },
+                {
+                    // "hex": "#FDD9B5",
+                    "label": "精华洁面液          |j|J|jinghua|jm|jiemian",
+                    // "rgb": "(253, 217, 181)"
+                },
+                {
+                    // "hex": "#FDD9B5",
+                    "label": "面膜 三色           |m|mianmo|",
+                    // "rgb": "(253, 217, 181)"
+                }
+
+            ]
+
+
+
+
+        $(function () {
+            $('#nope').autocompleter({
+                // marker for autocomplete matches
+                highlightMatches: true,
+
+                // object to local or url to remote search
+                source: colors,
+
+                // custom template
+                // template: '{{ label }} <span>({{ hex }})</span>',
+                template: '{{ label }} <span class="bais"></span>',
+
+                // show hint
+                // hint: true,
+
+                // abort source if empty field
+                empty: false,
+
+                // max results
+                limit: 9,
+
+
+            });
+        });
+
+        $('.nav-right').click(function(){
+
+          location.href = '../html/index.html'
+         })
+
+        $('#nope').on( 'input', function(){
+        if( $('#nope').val()==""){
+            // alert(1)
+            console.log(2)
+            $('.remove').show()
+            $('.bottom').eq(0).show();
+         }else{
+            // alert(1)
+            console.log(1)
+            $('.remove').hide()
+            $('.bottom').eq(0).hide();
+         }
+      
+        })
+      
+console.log(123)
+        //cookie获取数据
+    // console.log(document.cookie)
+    var oCookie = document.cookie.split('; ');
+    // console.log(oCookie)
+    for (var i = 0; i < oCookie.length; i++) {
+        var zz = oCookie[i].split('=')
+        // console.log(zz)
+        if (zz[0].slice(0, 4) == 'city') {
+            // console.log(zz[0])
+            // console.log(11)
+          
+            var cityname2 = zz[0].slice(4);
+            htmla = `
+            <span class="spann">${cityname2}</span>`
+            $('.bottom').append(htmla)
+            console.log(11111)
+            //点击按钮删除所有数据 并且清除缓存
+            
+            $('.sc').click(function () {
+                console.log(11)
+                console.log(zz[0])
+                // removeCookie(zz[0]);
+                // console.log(zz[0])
+                removeCookie(zz[0]);
+                $('.remove1 ').hide()
+                $('.tuijian').css('marginTop',50)
+                // $('.bottom').eq(0).hide();
+              
+                
+                // 
+            })
+
+
+        }
+    }
+
+        
+         
+    </script>
+</body>
+
+</html>

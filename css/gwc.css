@@ -1,0 +1,343 @@
+
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding-bottom: .63333rem;
+    background: #f2f2f2;
+    padding-top: 1.12rem;
+}
+header{
+    width: 100%;
+    height: 1.10667rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .48rem;
+    color: #4a4a4a;
+    background-color: #fff;
+    z-index: 1001;
+    border-bottom: 1px solid #e1e1e1;
+}
+.goback{
+    margin-top: .28rem;
+    margin-left: .4rem;
+    width: .32rem;
+    float: left;
+    display: block;
+}
+.name{
+    width: 7.4rem;
+    line-height: 1.10667rem;
+    height: 1.10667rem;
+    float: left;
+    text-align: center;
+    margin-left: .88rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+}
+.bj{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+}
+.checkbox{
+    width: .64rem;
+    float: left;
+    margin-left: .26667rem;
+    margin-top: .26667rem;
+}
+.check-top{
+    width: .48rem;
+    height: .48rem;
+    background: url(../img/a5.png) no-repeat round;
+}
+.check-txt{
+    font-size: .32rem;
+    text-align: center;
+    color: #919090;
+}
+.btn {
+    float: right;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: .66667rem;
+    padding-right: .66667rem;
+    border-radius: 0;
+    text-align: center;
+    font-size: .4rem;
+    background-color: #4cd7c0;
+    color: #fff;
+    border: none;
+    width: 3.2rem;
+}
+.jiage{
+    width: 6rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .4rem;
+    color: #4a4a4a;
+    text-align: right;
+}
+footer span {
+    color: #ff6692;
+    font-size: .42667rem;
+}
+.slogen-list{
+    width: 100%;
+    height: .96rem;
+    margin-top: 10px;
+}
+.slogen-list .slogen {
+    position: relative;
+    padding-left: .53333rem;
+    margin-right: .66667rem;
+    height: .96rem;
+    line-height: .96rem;
+    white-space: nowrap;
+    font-size: .34667rem;
+    color: #4a4a4a;
+    float: left;
+}
+.slogen img {
+    width: .4rem;
+    height: .4rem;
+}
+.product{
+    background-color: #fff;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    padding-top: .26rem;
+    box-sizing: border-box;
+    min-height: 3.33333333rem;
+    /* background: darskcyan; */
+    /* border-bottom: 1px solid gray; */
+    margin-top: 10px;
+}
+.checkB{
+    width: .48rem;
+    height: .48rem;
+    margin-top: 1rem;
+    background: url(../img/qqqq.png) 50% no-repeat;
+    background-size: cover;
+    float: left;
+}
+.check{
+    border-radius: .09333rem;
+    background: url(../img/aaaa.png) 50% no-repeat;
+    background-size: cover;
+}
+.checkB1{
+    width: .48rem;
+    height: .48rem;
+    margin-top: .15rem;
+    margin-left: 10px;
+    background: url(../img/qqqq.png) 50% no-repeat;
+    background-size: cover;
+    float: left;
+   
+}
+.check1{
+    border-radius: .09333rem;
+    background: url(../img/aaaa.png) 50% no-repeat;
+    background-size: cover;
+}
+.product-img{
+    float: left;
+    width: 2.21333rem;
+    height: 2.21333rem;
+    margin-top: .3rem;
+    margin-left: .2rem;
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-txt{
+    width: 6rem;
+    height: 2.8rem;
+    float: right;
+    margin-left: .2rem;
+    margin-top: 14px;
+}
+.detail-txt1{
+    float: left;
+    width: 4.4rem;
+    height: 100%;
+}
+.name-detail{
+    margin-bottom: .26667rem;
+    color: #4a4a4a;
+    font-size: .34667rem;
+    line-height: .6rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.liang{
+    margin-bottom: .13333rem;
+    color: #919090;
+    font-size: .37333rem;
+    padding-right: .2rem;
+    margin-right: .2rem;
+    white-space: nowrap;
+}
+.shan{
+    color: #919090;
+    margin-top: 10px;
+    position: relative;
+}
+.shan img{
+    height: 20px;
+    width:20px;
+}
+.shan span{
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 24px;
+}
+.detail-txt2{
+    width: 1.6rem;
+    height: 100%;
+    float: right;
+    text-align: right;
+    position: relative;
+}
+.danjia{
+    width: 100%;
+    font-size: .4rem;
+    color: #ff6692;
+    text-align: right;
+}
+.count{
+    width: 100%;
+    font-size: .4rem;
+    margin-top: .26667rem;
+    color: #a3a2a2;
+}
+
+footer{
+    height: 1.2rem;
+    margin-top: .26667rem;
+    line-height: 1.2rem;
+    font-size: .4rem;
+    color: #4a4a4a;
+    width: 10rem;
+    background-color: #fff;
+    border-top: .01333rem solid #eee;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.btn {
+    float: right;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: .66667rem;
+    padding-right: .66667rem;
+    border-radius: 0;
+    text-align:left;
+    font-size: .4rem;
+    background-color: #4cd7c0;
+    color: #fff;
+    border: none;
+    width: 3.2rem;
+    position: relative;
+}
+.jiage{
+    width: 6rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .4rem;
+    color: #4a4a4a;
+    text-align: right;
+}
+.jiage span {
+    color: #ff6692;
+    font-size: .42667rem;
+}
+.btn p{
+    position: absolute;
+    top: -1px;
+    left: 75px;
+   display: inline-block;
+ 
+}
+footer .qx{
+    display: inline-block;
+    font-size: .22667rem; 
+    color: #919090;
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    width: 40px;
+}
+
+.input-number {
+    display: inline-block;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    position: absolute;
+    left: -40px;
+    top: 89px;
+}
+.input-number button {
+    position: relative;
+    box-sizing: content-box;
+    font-size: 0;
+    outline: 0;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+}
+.input-number button, .input-number input {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    border: none;
+    outline: 0;
+}
+.input-number .minus-btn:before, .input-number .plus-btn:before {
+    top: 16px;
+    left: 10px;
+    width: 28px;
+    height: 3px;
+    transform: scale(.5);
+    transform-origin: left top;
+   
+}
+.input-number .minus-btn:before, .input-number .plus-btn:after, .input-number .plus-btn:before {
+    content: "";
+    position: absolute;
+    background-color: #666;
+    display: inline-block;
+}
+.input-number button:disabled:before {
+    background-color: #E2E2E2;
+}
+.input-number input {
+    color: #222;
+    border: 1px solid #E5E5E5;
+    border-top: none;
+    border-bottom: none;
+    vertical-align: top;
+}
+.container-center .tip, .input-number input {
+    font-size: 14px;
+    text-align: center;
+}
+.input-number .plus-btn:after {
+    top: 10px;
+    left: 16px;
+    width: 3px;
+    height: 28px;
+    transform: scale(.5);
+    transform-origin: left top;
+}

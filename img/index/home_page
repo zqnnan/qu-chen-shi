@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=keywords content=""><meta name=description content=""><meta http-equiv=x-ua-compatible content="ie=edge,chrome=1"><meta name=renderer content=webkit><meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" name=viewport><meta content=yes name=apple-mobile-web-app-capable><meta content=black name=apple-mobile-web-app-status-bar-style><meta content="telephone=no" name=format-detection><link rel="Shortcut Icon" href=//image.watsons.com.cn/upload/6395d76d.png><title>屈臣氏微商城</title>
+<meta name="topic-size" content="750,35026">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<title>屈臣氏专题</title>
+<script>
+window.analysisMars = {
+    trace(name){
+        this[name] = this[name] || Date.now()
+
+        //绝对值
+        for(var p in this){
+            if(typeof this[p] !== 'function' && typeof this[p] !== 'number') return;
+        }
+        this.trace = function(){}
+        window.Mars && window.Mars.send('analysisMars', analysisMars)
+
+        //差值
+        var delta = {}
+        for(var p in this){
+            if(typeof this[p] !== 'function'){
+                delta[p] = this[p] - this.appTimestamp
+            }
+        }
+        window.Mars && window.Mars.send('analysisMarsDelta', delta)
+    },
+    appTimestamp: parseInt((location.search.match(/appTimestamp=(\d+)/) || [])[1] || Date.now()),
+    htmlStart   : Date.now(),
+    layoutReady : null,
+    layoutSetCoreFromCache: null,
+    layoutSetCoreFromAPI  : null,
+    layoutGetOpDataStart  : null,
+    layoutGetOpDataEnd    : null,
+    topicV3SeckillReady   : null,
+    topicOpBannerReady    : null,
+    topicV3SeckillOpDataLoaded: null,
+    topicV3SeckillImageLoaded : null,
+}
+</script>
+
+<!--core-->
+<script>var CORE = {"_id":"5a24cb9406b7fb110aca576a","page_id":"home_page","page_title":"","background":"","layout":[{"instance_id":"15381292657594837","title":"运营位(页面)","name":"op-webview","common":{"name":"","disabled":false},"content":{"id":106,"name":"新头图运营位","code":"new_header"}},{"instance_id":"15257671949269492","title":"运营位(轮播)","name":"op-banner","common":{"name":"","disabled":false},"content":{"id":299,"name":"新版首页轮播_1217","code":"sylunbo"}},{"instance_id":"15484052903087956","title":"品购","name":"pingou","common":{"name":"","disabled":false},"content":{"area":[{"link":{"type":"topic","id":"T20180327100527534","desc":"专题: 关于我们 (T20180327100527534)","in":""},"rect":{"x":0.7625,"y":0.025,"w":0.228125,"h":0.13125},"name":""}],"bg":{"cell_height":800,"image":"https://image.watsons.com.cn//upload/02ba1047.png","total_height":66,"total_width":750}}},{"instance_id":"15300026247156574","title":"运营位(图片)","name":"op-image","common":{"name":"","disabled":false},"content":{"id":118,"name":"新首页4格导航入口_180105_index2","code":"new_Home_4navs_180105_1","style":"column4","feature":"{\"imgWidth\":188,\"imgHeight\":188,\"style\":\"column4\"}"}},{"instance_id":"15469133048476104","title":"运营位(页面)","name":"op-webview","common":{"name":"","disabled":false},"content":{"id":296,"name":"临时换券运营位","code":"临时"}},{"instance_id":"15562693976172600","title":"运营位(页面)","name":"op-webview","common":{"name":"","disabled":false,"date":{"use":false,"start":null,"end":null}},"content":{"id":325,"name":"小程序微商城导流app品购运营位","code":"dao_liu_app"}},{"instance_id":"15155655584098886","title":"运营位(页面)","name":"op-webview","common":{"name":"","disabled":false},"content":{"id":240,"name":"首页_品购_B版","code":"pingou_B"}},{"instance_id":"15125430389602929","title":"单图","name":"image","common":{"name":"","disabled":false},"content":{"image":"https://image.watsons.com.cn//upload/8c3676f5.jpg","link":{}}},{"instance_id":"15163316605986233","title":"运营位(图片)","name":"op-image","common":{"name":"","disabled":false},"content":{"id":24,"name":"首页_专题以上_临时活动图_6","code":"Home_AboveTopic_activity_170505_7","style":"column1","feature":"{\"imgWidth\":750,\"imgHeight\":400,\"style\":\"column1\"}"}},{"instance_id":"15154664718645898","title":"运营位(图片列表)","name":"op-image-list","common":{"name":"","disabled":false},"content":{"id":8,"name":"首页_专题Case_5月5_7","code":"Home_TopicCase_170505_7"}},{"instance_id":"15125430779987092","title":"空白","name":"space","common":{"name":"","disabled":false},"content":{"height":"10","color":""}},{"instance_id":"15125429092338751","title":"运营位(图片)","name":"op-image","common":{"name":"","disabled":false},"content":{"id":9,"name":"首页_品类入口_5月5_7","code":"Home_CategaryNavs_170505_7","style":"column2","feature":"{\"imgWidth\":375,\"imgHeight\":200,\"style\":\"column2\"}"}}],"layout_main":[],"share_enable":true,"share_title":"","share_text":"","share_icon":"","share_url":"","wx_header_disabled":false,"old_topic":"","white_list":["pan","晓东","Watsons","jianbing","Grace","qcs","tester","萧沐鑫","阳","Brin"],"rel_itemgroup":{"group_id":"","group_name":""},"is_app_tab_page":false};</script>
+
+<script>
+// 后台模式 html宽度不设置为10vw，因为滚动条的影响，有误差..
+;(function(docEl, t, padBaseSize){
+    var w,r=function(){
+        var nw=Math.min(docEl.getBoundingClientRect().width, padBaseSize)
+        if(nw!==w) w=nw,docEl.setAttribute('style','font-size:'+w/10+'px')
+    }
+    if(t.setAttribute('style','width:1vw'), !t.style.width||window.CORE==='BACKEND') window.addEventListener('load', r),window.addEventListener('resize', r)
+})(document.documentElement, document.createElement('div'), 750);
+</script>
+<script src="https://hm.baidu.com/hm.js?d4c8df8588382d013345e7bf063934e2"></script>
+<!--ws-host-->
+<script>var WS_HOST = {"NODE_ENV":"production","H5":"https://h5.watsons.com.cn","ASSETS":"https://asset.watsons.com.cn","STATIC":"https://asset.watsons.com.cn","ACT_API":"https://h5.watsons.com.cn/act","PHP":{"ACTIVITY":"https://act.watsons.com.cn/act","ACT":"https://act.watsons.com.cn","CHECKIN":"https://act.watsons.com.cn/checkin"},"IT_LINk":{"wxAuth":"http://wechat.watsons.com.cn/wx-proxy-web/oauth2?appId=wx6b991773cd84806c&scope=snsapi_base&state=aadfsf&","updateCard":"http://vip.watsons.com.cn/VIPWatsons/card_register_vip.aspx?","cardMerge":"http://ecard.watsons.com.cn/optcard/toShowCards?","personalCard":"http://ecard.watsons.com.cn/cardFace/toCardPage?appId=wx6b991773cd84806c&","credit":"http://ecard.watsons.com.cn/integral/toIndex?","merchant":"http://city.watsonsvip.com.cn/www/index.aspx?","shop":"http://apt.watsons.com.cn/webchat/wap/toMemberIndex?"}}</script>
+
+<link href=//asset.watsons.com.cn/h5/static/css/vendor.5381023df443a9f2da118eae022bd7f1.css?4ddb228cfa9d88aa3ecc rel=stylesheet><link href=//asset.watsons.com.cn/h5/static/css/special.a5f5c75c2a736716bdc7a50a2fb59ece.css?4ddb228cfa9d88aa3ecc rel=stylesheet></head><body><div id=specialApp></div>
+<script>
+if(window.CORE){
+    if(window.CORE.page_title){
+        document.title = window.CORE.page_title
+    }
+
+    if(window.CORE.share_enable){
+        window.isShare = function(){ return 1 }
+    }
+
+    document.body.setAttribute('data-topic-id', window.CORE.page_id)
+}
+
+var WS_TOPIC_WRAPPER = true
+</script>
+
+<div id="app-topic"></div>
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>!function(e){function n(r){if(o[r])return o[r].exports;var t=o[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,n),t.l=!0,t.exports}var r=window.webpackJsonpTopic;window.webpackJsonpTopic=function(o,c,a){for(var i,l,d,f=0,s=[];f<o.length;f++)l=o[f],t[l]&&s.push(t[l][0]),t[l]=0;for(i in c)Object.prototype.hasOwnProperty.call(c,i)&&(e[i]=c[i]);for(r&&r(o,c,a);s.length;)s.shift()();if(a)for(f=0;f<a.length;f++)d=n(n.s=a[f]);return d};var o={},t={32:0};n.e=function(e){function r(){i.onerror=i.onload=null,clearTimeout(l);var n=t[e];0!==n&&(n&&n[1](new Error("Loading chunk "+e+" failed.")),t[e]=void 0)}var o=t[e];if(0===o)return new Promise(function(e){e()});if(o)return o[2];var c=new Promise(function(n,r){o=t[e]=[n,r]});o[2]=c;var a=document.getElementsByTagName("head")[0],i=document.createElement("script");i.type="text/javascript",i.charset="utf-8",i.async=!0,i.timeout=12e4,n.nc&&i.setAttribute("nonce",n.nc),i.src=n.p+""+({0:"once/20180211-blingbling",1:"wheel-lottery",2:"member-birthday-gift",3:"v4-seckill-header",4:"v3-seckill",5:"v4-seckill-page",6:"v4-seckill-banner",7:"wrapper",8:"v5-seckill",9:"once/20190522-coupon",10:"coupon-sign-in",11:"coupon-act",12:"vip-store-item",13:"secondkill-brand",14:"once/20180618-header",15:"vip-store",16:"v4-seckill-card",17:"secondkill",18:"secondkill-itemgroup",19:"navbar",20:"video",21:"trial",22:"side-entry",23:"side-ad",24:"richtext",25:"once/20180507-dialog",26:"countdown",27:"brandwall",28:"./op-topic",30:"backend-masker",31:"backend"}[e]||e)+"-"+{0:"49125654",1:"8b3c2afb",2:"f91346a6",3:"5b088dbf",4:"30343299",5:"fa983f05",6:"c65b6591",7:"b4bb2a0f",8:"475dbfd7",9:"3b3596b7",10:"73811370",11:"8e7b1c2e",12:"ef8c7fb7",13:"1a4c9fd3",14:"bdfa951c",15:"83a926c8",16:"6e06b506",17:"85ec1e30",18:"e389c714",19:"389dcb07",20:"4ba54d80",21:"03e17cdf",22:"9ef5d297",23:"914f420f",24:"ab6cceae",25:"f36b63ff",26:"3e39e385",27:"f19dc12d",28:"5376de45",30:"6b0d5853",31:"6e34dce9"}[e]+".js";var l=setTimeout(r,12e4);return i.onerror=i.onload=r,a.appendChild(i),c},n.m=e,n.c=o,n.d=function(e,r,o){n.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:o})},n.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(r,"a",r),r},n.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},n.p="//asset.watsons.com.cn/topic/static/",n.oe=function(e){throw console.error(e),e}}([]);</script>
+<script type="text/javascript" src="//asset.watsons.com.cn/topic/static/index-24ffce4c.js"></script><script type=text/javascript src=//asset.watsons.com.cn/h5/static/js/manifest.45f9baad166f5a1d9df6.js?4ddb228cfa9d88aa3ecc></script><script type=text/javascript src=//asset.watsons.com.cn/h5/static/js/vendor.cd0452c0a3ba45d4c3b3.js?4ddb228cfa9d88aa3ecc></script><script type=text/javascript src=//asset.watsons.com.cn/h5/static/js/special.86860f26bf660af5f0b1.js?4ddb228cfa9d88aa3ecc></script></body></html>
